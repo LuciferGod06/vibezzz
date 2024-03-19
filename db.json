@@ -1,0 +1,154 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "/Assest/1.png",
+      "name": "contrast knit t-shirt",
+      "price": 59.99,
+      "category": "tees"
+    },
+    {
+      "id": 2,
+      "img": "/Assest/2.png",
+      "name": "crochet textured knit top",
+      "price": 79.99,
+      "category": "tees"
+    },
+    {
+      "id": 3,
+      "img": "/Assest/3.png",
+      "name": "knit t-shirt with buttoned collar",
+      "price": 39.99,
+      "category": "tees"
+    },
+    {
+      "id": 4,
+      "img": "/Assest/4.png",
+      "name": "basic medium weight t-shirt",
+      "price": 29.99,
+      "category": "tees"
+    },
+    {
+      "id": 5,
+      "img": "/Assest/5.png",
+      "name": "contast printed t-shirt",
+      "price": 39.99,
+      "category": "tees"
+    },
+    {
+      "id": 6,
+      "img": "/Assest/6.png",
+      "name": "vertical stripe knit t-shirt",
+      "price": 39.99,
+      "category": "tees"
+    },
+    {
+      "id": 7,
+      "img": "/Assest/7.png",
+      "name": "skull print t-shirt",
+      "price": 49.99,
+      "category": "tees"
+    },
+    {
+      "id": 8,
+      "img": "/Assest/8.png",
+      "name": "TEXTURE KNIT T-SHIRT",
+      "price": 39.99,
+      "category": "tees"
+    },
+    {
+      "id": 9,
+      "img": "/Assest/9.JPG",
+      "name": "Regular Hoodie",
+      "price": 99.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 10,
+      "img": "/Assest/11.jpeg",
+      "name": "Black and white Strip Long T-Shirt",
+      "price": 79.99,
+      "category": "T-Shirt"
+    },
+    {
+      "id": 11,
+      "img": "/Assest/12.jpeg",
+      "name": "Plain Black Long T-Shirt",
+      "price": 59.99,
+      "category": "T-Shirt"
+    },
+    {
+      "id": 12,
+      "img": "/Assest/13.jpeg",
+      "name": "Grey Long T-Shirt",
+      "price": 69.99,
+      "category": "T-Shirt"
+    },
+    {
+      "id": 13,
+      "img": "/Assest/14.jpeg",
+      "name": "Regular Hoodie",
+      "price": 129.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 14,
+      "img": "/Assest/15.jpeg",
+      "name": "Printed Hoodie",
+      "price": 149.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 15,
+      "img": "/Assest/16.jpeg",
+      "name": "Zip Jacket Hoodie",
+      "price": 99.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 16,
+      "img": "/Assest/17.jpeg",
+      "name": "Muffet Print Hoodie",
+      "price": 179.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 17,
+      "img": "/Assest/18.jpeg",
+      "name": "Zip Hoodie",
+      "price": 189.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 18,
+      "img": "/Assest/19.jpeg",
+      "name": "Plain Shirt",
+      "price": 89.99,
+      "category": "Shirt"
+    },
+    {
+      "id": 19,
+      "img": "/Assest/20.jpg",
+      "name": "Tom & jerry Print Hoodie",
+      "price": 149.99,
+      "category": "Hoodies"
+    },
+    {
+      "id": 20,
+      "img": "/Assest/21.jpeg",
+      "name": "Textured Printed Shirt",
+      "price": 99.99,
+      "category": "Shirt"
+    }
+  ],
+  "users": [
+    {
+      "name": "Gourav",
+      "email": "pras@gmail.com",
+      "no": "213465497",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "cart": []
+}

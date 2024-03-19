@@ -1,0 +1,22 @@
+#LoginTopImage{
+    width: 150px;
+    margin:auto;
+}
+
+.PasswordIcon{
+    font-size: 21px;
+}
+
+#SignupButton{
+    background: black;
+    color: white;
+    border-radius: 2rem;
+    margin-top: 2%;
+
+}
+
+span{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+}

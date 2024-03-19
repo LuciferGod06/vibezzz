@@ -1,0 +1,87 @@
+#Navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1% 2%;
+    align-items: center;
+
+}
+
+#NavbarMainIconImage{
+    width: 180px;
+    margin-left: 9%;
+
+}
+
+#NavbarTopBarIcons{
+    font-size: 26px;
+    display: flex;
+    gap: 30px;
+  
+}
+
+#NavbarH1{
+    font-size: 30px;
+    font-weight: 300;
+}
+#Navbar_Icon{
+    width: 140px;
+    margin: auto;
+}
+
+
+.DrawerCloseButton{
+    margin-top: 10px;
+    font-size: 40px;
+    border: 1px solid;
+}
+
+#NavbarButton{
+    font-size: 26px;
+}   
+
+
+#NavbarItems {
+    list-style-type: none;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#NavbarItems .NavbarListitem{
+    transition: .3s ease;
+    width: 110px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+.NavbarListitem::before,
+.NavbarListitem::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #000000; 
+  transition: all 0.3s;
+  /* transition: 0.2s; */
+}
+
+
+  .NavbarListitem::after {
+    bottom: 0;
+    left: 0;
+
+  }
+  
+  .NavbarListitem:hover::after {
+    width: 70%;
+  }
+
+  .NavbarListitem:hover{
+    transform: scale(1.02);
+
+  }
