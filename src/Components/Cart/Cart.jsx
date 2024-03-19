@@ -4,7 +4,6 @@ import { Button, Select, Skeleton } from '@chakra-ui/react'
 import { Footer } from 'Components/Footer/Footer'
 import axios from 'axios'
 
-import cart1 from '../Assest/cart1-removebg-preview.png'
 import cart2 from '../Assest/cart2-removebg-preview.png'
 
 export const Cart = () => {
@@ -42,7 +41,6 @@ export const Cart = () => {
    
     const Handleqty = (value, id) => {
 
-        // setupdate(item.filter((ele)=>ele.id === id));
         var updatedItem = (item.filter((ele) => ele.id === id));
       
         axios.put(`http://localhost:8080/cart/${id}`, {

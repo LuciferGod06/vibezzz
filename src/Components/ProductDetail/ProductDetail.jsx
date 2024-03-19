@@ -20,6 +20,7 @@ import { useParams } from 'react-router-dom'
 const assest = [image1, image2, image3, image4, image5, image6, image7, image8];
 
 export const ProductDetail = () => {
+  const [cartArray, setCartArray] = useState([]);
 
   const [width, setwidth] = useState(0);
   const [Product, setProduct] = useState({});
@@ -35,36 +36,63 @@ export const ProductDetail = () => {
     axios.get(`http://localhost:8080/products/${id}`)
       .then((resp) => { setProduct(resp.data) })
       .catch((err) => { console.log(err) })
+
+    axios.get(`http://localhost:8080/cart`)
+      .then((resp) => { setCartArray(resp.data) })
+      .catch((err) => { console.log(err) })
   }, [id, cartItem]);
 
-  console.log(Product);
   const arr = [1, 2, 3];
   const toast = useToast();
 
   const handleAddtoCart = () => {
-    axios.post('http://localhost:8080/cart', {
-      CartImg: Product.img,
-      CartName: Product.name,
-      CartPrice: Product.price,
-      CartQty: cartItem.qty || 1,
-      CartSize: cartItem.size
-    })
-      .then(function (response) {
-        console.log(response);
+
+
+    if (cartItem.size === "") {
+      toast({
+        description: "Please Select your Size.",
+        status: 'warning',
+        duration: 2000
       })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-
-    toast({
-      description: "Added to your Shopping cart.",
-      status: 'success',
-      duration: 2000
-    })
+    }
+    else  {
+      
+      const item = cartArray.find((ele) => ele.id === Product.id);
+      if(item !== undefined){
+        toast({
+          description: "This Product is Already added in your cart.",
+          status: 'warning',
+          duration: 2000,
+          position:'top'
+        })
+      }
+      else {
+        axios.post('http://localhost:8080/cart', {
+        id :Product.id,  
+        CartImg: Product.img,
+          CartName: Product.name,
+          CartPrice: Product.price,
+          CartQty: cartItem.qty || 1,
+          CartSize: cartItem.size
+        })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+  
+  
+        toast({
+          description: "Added to your Shopping cart.",
+          status: 'success',
+          duration: 2000
+        })
+      }
+    }
+    
   }
 
-  console.log(cartItem)
 
   return (
     <div id='ProductDetail' >

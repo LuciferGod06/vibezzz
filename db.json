@@ -150,5 +150,30 @@
       "id": 1
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 2,
+      "CartName": "crochet textured knit top",
+      "CartImg": "/Assest/2.png",
+      "CartPrice": 79.99,
+      "CartSize": "S",
+      "CartQty": "3"
+    },
+    {
+      "id": 1,
+      "CartImg": "/Assest/1.png",
+      "CartName": "contrast knit t-shirt",
+      "CartPrice": 59.99,
+      "CartQty": 1,
+      "CartSize": "L"
+    },
+    {
+      "id": 8,
+      "CartImg": "/Assest/8.png",
+      "CartName": "TEXTURE KNIT T-SHIRT",
+      "CartPrice": 39.99,
+      "CartQty": "3",
+      "CartSize": "M"
+    }
+  ]
 }
